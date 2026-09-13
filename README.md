@@ -49,6 +49,7 @@ cars_6_to_10.loc[:, ['Model', 'mpg', 'cyl', 'hp', 'gear']]
 ```
 
 B.  MODEL LOOKUP
+---
 Use Boolean indexing on the Model column to answer both requests.
   
     a. Display the complete row for Toyota Corolla.
@@ -71,6 +72,7 @@ pontiac
 ```
 
 C.  MULTI-MODEL SUBSETTING
+---
 Create a DataFrame named selected_cars containing only the records for three models: Datsun 710, Lotus Europa, and Ferrari Dino.
 
 For these records, retain only Model, mpg, cyl, hp, and gear. Select the rows by their model values rather than by row numbers. Display selected cars and its shape.
