@@ -34,7 +34,7 @@ The following function and methods were used in this problem:
   - `.iloc[r,c]` - used to select rows and columns from the dataframe by their integer position.
   - `.loc[r, c]` - used to locate the specific rows and columns by their labels.
     
-These methods were used to create a single function that displays a sliced dataset and specific columns:
+These methods were used to create a single function that displays a ranged dataset and specific columns:
 ```python
 # (a)
 print ("Shape:", cars.shape)
