@@ -1,5 +1,5 @@
 # ECE2112_HULIPAS_PA3
-#### EXPERIMENT 2: PYTHON DATA ANALYSIS<br>**Submitted By: Kathleen Hazel L. Hulipas | 2ECE-A**
+#### EXPERIMENT 3: PYTHON DATA ANALYSIS<br>**Submitted By: Kathleen Hazel L. Hulipas | 2ECE-A**
 The content of this repository contains the _**Programming Assignment 3**_ for ECE2112 Advanced Computer Programming course A.Y. 2026 - 2027 which covers python problems from _**Module 3 - PANDAS**_.
 
 Objectives
