@@ -47,6 +47,30 @@ cars_6_to_10
 # (c)
 cars_6_to_10.loc[:, ['Model', 'mpg', 'cyl', 'hp', 'gear']]
 ```
+### OUTCOMES:
+(a)
+```
+Shape: (32, 12)
+List of Column Names: ['Model', 'mpg', 'cyl', 'disp', 'hp', 'drat', 'wt', 'qsec', 'vs', 'am', 'gear', 'carb']
+```
+
+(b)
+|  | Model | mpg | cyl | disp | hp | drat | wt | qsec | vs | am | gear | carb |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 5 | Valiant | 18.1 | 6 | 225.0 | 105 | 2.76 | 3.46 | 20.22 | 1 | 0 | 3 | 1 |
+| 6 | Duster 360 | 14.3 | 8 | 360.0 | 245 | 3.21 | 3.57 | 15.84 | 0 | 0 | 3 | 4 |
+| 7 | Merc 240D | 24.4 | 4 | 146.7 | 62 | 3.69 | 3.19 | 20.00 | 1 | 0 | 4 | 2 |
+| 8 | Merc 230 | 22.8 | 4 | 140.8 | 95 | 3.92 | 3.15 | 22.90 | 1 | 0 | 4 | 2 |
+| 9 | Merc 280 | 19.2 | 6 | 167.6 | 123 | 3.92 | 3.44 | 18.30 | 1 | 0 | 4 | 4 |
+
+(c)
+|  | Model | mpg | cyl | hp | gear |
+|---|---|---|---|---|---|
+| 5 | Valiant | 18.1 | 6 | 105 | 3 |
+| 6 | Duster 360 | 14.3 | 8 | 245 | 3 |
+| 7 | Merc 240D | 24.4 | 4 | 62 | 4 |
+| 8 | Merc 230 | 22.8 | 4 | 95 | 4 |
+| 9 | Merc 280 | 19.2 | 6 | 123 | 4 |
 
 B.  MODEL LOOKUP
 ---
@@ -71,6 +95,17 @@ pontiac = cars.loc[(cars['Model']=='Pontiac Firebird'), ['Model', 'mpg', 'hp', '
 pontiac
 ```
 
+### OUTCOMES:
+(a)
+| # | Model | mpg | cyl | disp | hp | drat | wt | qsec | vs | am | gear | carb |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 19 | Toyota Corolla | 33.9 | 4 | 71.1 | 65 | 4.22 | 1.835 | 19.9 | 1 | 1 | 4 | 1 |
+
+(b)
+| # | Model | mpg | hp | wt |
+|---|---|---|---|---|
+| 24 | Pontiac Firebird | 19.2 | 175 | 3.845 |
+
 C.  MULTI-MODEL SUBSETTING
 ---
 Create a DataFrame named selected_cars containing only the records for three models: Datsun 710, Lotus Europa, and Ferrari Dino.
@@ -88,8 +123,19 @@ selected_cars = cars.loc[(cars['Model']=='Datsun 710')|(cars['Model']=='Lotus Eu
 print ("Shape:", selected_cars.shape)
 selected_cars
 ```
+### OUTCOMES:
+```
+Shape: (3, 5)
+```
+| # | Model | mpg | cyl | hp | gear |
+|---|---|---|---|---|---|
+| 2 | Datsun 710 | 22.8 | 4 | 93 | 4 |
+| 27 | Lotus Europa | 30.4 | 4 | 113 | 5 |
+| 29 | Ferrari Dino | 19.7 | 6 | 175 | 5 |
+
 ---
 To view the program for PA3: download [ECE2112_PA3](https://github.com/kathleenhazelhulipas-cloud/ECE2112_HULIPAS_PA3/blob/main/PA3.ipynb), open on Jupyter Notebook, and run all cells.
 
 ## **README file Version History:**
 - September 13, 2026 - Uploaded Readme File, PA3.ipynb, and cars.csv
+- September 15, 2026 - Updated Readme File Format
